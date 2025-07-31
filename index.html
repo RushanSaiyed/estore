@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -30,8 +35,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#">About</a>
                         <a class="nav-link" href="/contact.html">Contact</a>
-                       
+
                     </div>
+
+                    <div class="icons">
+                        <a href="/cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -217,6 +227,84 @@
             </div>
         </div>
     </section>
+
+   <section class="category">
+     <div class="container">
+        <div class="center">
+            <div class="category-box">
+                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                    class="img-fluid" alt="">
+                    <h6>Demo</h6>
+            </div>
+
+            <div class="category-box">
+                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                    class="img-fluid" alt="">
+                    <h6>Demo</h6>
+            </div>
+
+            <div class="category-box">
+                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                    class="img-fluid" alt="">
+                    <h6>Demo</h6>
+            </div>
+
+            <div class="category-box">
+                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                    class="img-fluid" alt="">
+                    <h6>Demo</h6>
+            </div>
+
+            <div class="category-box">
+                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                    class="img-fluid" alt="">
+                    <h6>Demo</h6>
+            </div>
+
+            <div class="category-box">
+                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                    class="img-fluid" alt="">
+                    <h6>Demo</h6>
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            autoplay: true,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
